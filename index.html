@@ -16,7 +16,8 @@
             width: 40%;
             margin: 0 auto;
 
-            input, select {
+            input,
+            select {
                 margin-top: 10px;
             }
 
@@ -29,33 +30,31 @@
             }
         }
     </style>
-    <script src="poo.js"></script>
+
 </head>
 
 <body>
 
-    <form>
-        <input type="text" placeholder="Marca" id="marca" value="hola"/>
-        <input type="number" placeholder="Precio" />
-        <span>Garantia<input type="checkbox" checked /></span>
-        <br/>
+    <form id="formularioIngreso">
+        <input type="text" placeholder="Marca" id="marca" />
+        <input type="number" placeholder="Precio" id="precio" />
+        <span><input type="checkbox" id="garantia" value="garantia" />Garantia</span>
+        <br />
         Colores
-        <select name="" id="">
+        <select name="" id="color">
             <option value="negro">Negro</option>
             <option value="blanco">Blanco</option>
             <option value="dorado">Dorado</option>
         </select>
-        <input type="text" placeholder="Almacenamiento">
-        <br/>
+        <input type="text" placeholder="Almacenamiento" id="almacenamiento">
+        <br />
         <span>
-            Cámara Frontal<input type="checkbox" checked />
+            <input type="checkbox" id="camaraFrontal" value="camaraFrontal" />Cámara Frontal
         </span>
-        <input type="text" placeholder="Resolución Cámara">
+        <input type="text" placeholder="Resolución Cámara" id="resolucion">
         <button type="submit">Guardar información</button>
     </form>
-
-
-    
+    <script src="registroCelulares.js"></script>
 </body>
 
 </html>
